@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../VSC"
+		},
+		{
+			"name": "VSC-SF",
+			"path": "../../../VSC-SF/VSC-SF"
+		}
+	],
+	"settings": {}
+}
