@@ -1,0 +1,14 @@
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+    object-fit: cover; /* Ajuste proporcional */
+    max-height: 200px; /* Altura máxima */
+}
+
+.card-image:hover {
+    transform: scale(1.05); /* Zoom ligero al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más fuerte en hover */
+}

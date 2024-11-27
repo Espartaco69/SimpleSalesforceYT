@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-grid slds-wrap" style="gap: 16px; justify-content: flex-start;">
+      <template for:each={cards} for:item="card">
+        <div key={card.id} class="slds-card" style="width: calc(33% - 16px); min-width: 300px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-bottom: 16px;">
+          <div class="slds-card__body slds-card__body_inner">
+            <img src={card.imageUrl} alt={card.title} class="card-image" />
+            <div class="slds-p-top_medium">
+              <h2 class="slds-text-heading_small">{card.title}</h2>
+              <p>{card.description}</p>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </template>
+  
