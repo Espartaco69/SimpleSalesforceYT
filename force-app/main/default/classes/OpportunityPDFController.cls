@@ -1,8 +1,14 @@
 public with sharing class OpportunityPDFController {
+    // Lista de oportunidades que se mostrará en la página
     public List<Opportunity> opportunities { get; set; }
 
+    // Constructor que inicializa la lista
     public OpportunityPDFController() {
-        // Recuperar las oportunidades con cuentas relacionadas
-        opportunities = [SELECT Id, Name, Amount, CloseDate, Account.Name FROM Opportunity ORDER BY CloseDate DESC LIMIT 50];
+        opportunities = [
+            SELECT Id, Name, Amount, CloseDate, Account.Name 
+            FROM Opportunity 
+            ORDER BY CloseDate DESC 
+            LIMIT 50
+        ];
     }
 }
